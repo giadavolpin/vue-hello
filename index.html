@@ -9,13 +9,22 @@
 <body>
     
 <script src="https://unpkg.com/vue@3"></script>
-<div id="app">{{ message}} </div>
+<div id="app">{{ message }} </div>
 
 <script>
     console.log(Vue);
     const{ createApp} = Vue;
 
-    createAù
+    createApp(
+       
+    data(){
+            return {
+                message: 'Hello World !'
+            }
+        }
+    ).mount('#app');
+    
+
 
 </script>
 
