@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vue hellot</title>
+    <title>vue hello</title>
 </head>
 <body>
     
 <script src="https://unpkg.com/vue@3"></script>
-<div id="app">{{ message }} </div>
+<div id="app">
+    <h1 v-blind:class="color">blu</h1>
+    {{ message }} </div>
 
 <script>
     console.log(Vue);
     const{ createApp} = Vue;
 
-    createApp(
+   const app = createApp({
        
     data(){
             return {
-                message: 'Hello World !'
+                message:'Hello World !'
+                color:red 
             }
         }
-    ).mount('#app');
+    }).mount('#app');   // questo serve per stampare la nostra pagina 
     
 
 
 </script>
 
+
+<script src="./script.js"></script>
 </body>
 </html>
