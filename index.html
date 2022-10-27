@@ -8,10 +8,13 @@
 </head>
 <body>
     
-<script src="https://unpkg.com/vue@3"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 <div id="app">
-    <h1 v-blind:class="color">blu</h1>
-    {{ message }} </div>
+    <h1 :class = 'color'>blu</h1>
+    {{ message }} 
+    <input type="text" v-model="message" >
+</div>
 
 <script>
     console.log(Vue);
@@ -21,8 +24,8 @@
        
     data(){
             return {
-                message:'Hello World !'
-                color:red 
+                message:'Hello World!'
+                color: 'red' 
             }
         }
     }).mount('#app');   // questo serve per stampare la nostra pagina 
