@@ -11,9 +11,9 @@
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 <div id="app">
-    <h1 :class = 'color'>blu</h1>
+    <h1 :class = 'color'>blu</h1> <!-- sto modificando il colore in blu -->
     {{ message }} 
-    <input type="text" v-model="message" >
+    <input type="text" v-model="message" > <!-- v-model casella di input -->
 </div>
 
 <script>
@@ -24,7 +24,7 @@
        
     data(){
             return {
-                message:'Hello World!'
+                message:'Hello World!', //ricordati di mettere la virgola se non funziona quello sotto
                 color: 'red' 
             }
         }
